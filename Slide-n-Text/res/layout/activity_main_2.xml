@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#B8C7D1">
+ 
+  <TextView android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:text="Your Message..."
+        android:gravity="left"
+        android:layout_margin="5dp"/>
+
+  
+
+   <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:ems="10" 
+        android:scrollbars="vertical"
+        android:ellipsize="end"
+        android:maxLines="10"
+        android:clickable="false" 
+        android:cursorVisible="false" 
+        android:focusable="false" 
+        android:background="#FFFFFF"
+        android:focusableInTouchMode="false">
+        <requestFocus />
+ </EditText>
+ 
+ <TextView android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:text="Phone Number"
+        android:gravity="left"
+        android:layout_margin="5dp"/>
+ 
+    <EditText
+        android:id="@+id/editTextPhoneNo"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#FFFFFF"
+        android:phoneNumber="true" >
+    </EditText>
+ 	
+       
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="*"
+    android:scrollbars="vertical">   
+
+        
+        
+ 	<TableRow>
+ 	    
+ 	     <Button
+                android:id="@+id/buttonOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                 android:textColor="#395875"
+               	android:onClick="button_ONE"
+                android:text=" 1 " />
+
+         <Button
+                android:id="@+id/buttonTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:textStyle="bold"
+                 android:textColor="#395875"
+                android:onClick="button_TWO"
+                android:text=" 2 " />
+         <Button
+                android:id="@+id/buttonThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:textStyle="bold"
+                 android:textColor="#395875"
+                android:onClick="button_THREE"
+                android:text=" 3 " />
+            
+     </TableRow>
+     <TableRow >
+          <Button
+                android:id="@+id/buttonFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                 android:textColor="#395875"
+               	android:onClick="button_FOUR"
+                android:text=" 4 " />
+
+         <Button
+                android:id="@+id/buttonFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                 android:textColor="#395875"
+                android:textStyle="bold"
+                android:onClick="button_FIVE"
+                android:text=" 5 " />
+         <Button
+                android:id="@+id/buttonSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                 android:textColor="#395875"
+                android:textStyle="bold"
+                android:onClick="button_SIX"
+                android:text=" 6 " />
+    </TableRow>
+
+      <TableRow >
+          <Button
+                android:id="@+id/buttonSeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                 android:textColor="#395875"
+               	android:onClick="button_SEVEN"
+                android:text=" 7 " />
+
+         <Button
+                android:id="@+id/buttonEight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                 android:textColor="#395875"
+                android:textStyle="bold"
+                android:onClick="button_EIGHT"
+                android:text=" 8 " />
+
+         <Button
+             android:id="@+id/buttonNine"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dip"
+              android:textColor="#395875"
+             android:textStyle="bold"
+             android:onClick="button_NINE"
+             android:text=" 9 " />
+         
+     </TableRow>
+     <TableRow >
+         <Button android:id="@+id/btnClose"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+         	  android:textColor="#FFFFFF"
+         	  android:textStyle="bold"
+       		  android:text="Back"/>
+         <Button
+                android:id="@+id/buttonTen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             	android:layout_marginLeft="20dip"
+             	android:textStyle="bold"
+             	 android:textColor="#395875"
+                android:onClick="button_ZERO"
+                android:text=" 0 " />
+         
+          <Button
+        android:id="@+id/buttonSend"
+        
+        
+        android:layout_marginLeft="20dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="button_sendsms"
+         android:textColor="#800000"
+      	 android:textStyle="bold"
+        android:text="Send" />
+     </TableRow>
+     </TableLayout>
+           
+        
+        
+  	
+ 
+</LinearLayout>
